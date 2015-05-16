@@ -1,0 +1,286 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass";
+
+ @import "compass/reset";
+
+@import 'partials/variables'; // colors, fonts etc...
+
+@import 'partials/mixins'; // custom mixins
+
+@import 'partials/layout'; // responsive grid and media queries
+
+@import 'partials/_global'; // Global Variables scss
+
+@import 'partials/redefined'; // custom css
+
+@import 'partials/main'; // custom css
+
+@import "partials/custom-basic"; //custom basic plugins
+
+@import "partials/admin"; //custom admin
+
+@import 'font-awesome/font-awesome';     // font awesome icons
+
+
+// Vertical align elements --- works like magic 
+// make sure to set the parent to preserve 3d like this
+// %parent-element {
+//   -webkit-transform-style: preserve-3d;
+//   -moz-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+// }
+
+
+// -------------------------------- 
+
+// Options for vertical rhythm.
+
+//  @include adjust-leading-to(2); ---- a multiple of the line height 
+//  @include adjust-font-size-to(24px); --- adjust the font size while maintaining the vertical rhythm 
+//  @include leader(1); ---- Apply leading whitespace. The $property can be margin or padding.
+//  @include trailing-border(2px, .5); ----- set a border bottom and adjust the line height
+//  @include rhythm(1, 0, 0, 1);------ mixin to apply whitespace for top and bottom margins and padding.
+//  @include rhythm-margins(1, 1); ----- mixin to apply whitespace for top and bottom margins.
+//  @include rhythm-padding(1, 1); ----- mixin to apply whitespace for top and bottom padding.
+// --------------------------------
+
+%parent-element {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+%bottom-align {
+  position: relative;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+%btn {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "source_sans_proregular",Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 0.5em;
+  padding-right: 1.2em;
+  padding-bottom: 0.65em;
+  padding-left: 1.2em;
+  font-size: 1em;
+  border-radius: 3px;
+  box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.3) inset;
+ // background-color: lighten($main, 15%);
+  color: white;
+  transition: background-color 300ms ease-out;
+
+  &:hover, &:focus{
+    //background-color: $main;
+    color: #fff;
+  }
+}
+
+a.btn,
+select.btn
+{
+  padding: 6px 12px;
+  margin: 0;
+  @include adjust-font-size-to(13px);
+}
+button,
+a.btn,
+select.btn,
+input[type="button"],
+input[type="submit"],
+.button{
+  @extend %btn;
+
+  &.main{
+    background-color: $main1;
+    color: #FFF;
+
+    &:hover, &:focus{
+      background-color: darken($main1, 10%);
+      color: #fff;
+    }
+  }
+
+  &.secondary{
+    background-color: #dbe3e8;
+    color: #fff;
+
+    &:hover, &:focus{
+      background-color: darken(#dbe3e8, 10%);
+      color: #fff;
+    }
+  }
+
+  &.inverted{
+    background-color: #000;
+    color: #fff;
+
+    &:hover, &:focus{
+      background-color: darken(#000, 10%);
+      color: #fff;
+    }
+  }
+
+  &.teal{
+    background-color: lighten(teal,5%);
+    color: #fff;
+
+    &:hover, &:focus{
+      background-color: darken(teal, 0%);
+      color: #fff;
+    }
+  }
+
+  &.alert{
+    background-color: $alert;
+    color: #fff;
+
+    &:hover, &:focus{
+      background-color: darken($alert, 10%);
+      color: #fff;
+    } 
+  }
+
+  &.special{
+    background-color: $main2;
+    color: #fff;
+
+    &:hover, &:focus{
+      background-color: darken($main2, 10%);
+      color: #fff;
+    }
+  }
+
+  &.success{
+    background-color: $succes;
+    color: #fff;
+
+    &:hover, &:focus{
+      background-color: darken($succes, 10%);
+      color: #fff;
+    }
+  }
+
+  &.small {
+    padding-top: 0.075rem;
+    padding-right: 1.55rem;
+    padding-bottom: 0.0375rem;
+    padding-left: 1.55rem;
+    @include adjust-font-size-to(12px); }
+
+
+    &.tiny {
+      padding-top: 0.625rem;
+      padding-right: 1.25rem;
+      padding-bottom: 0.6875rem;
+      padding-left: 1.25rem;
+      font-size: 0.6875rem; }
+      &.expand {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%; }
+      }
+
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+html {
+  @include adjust-leading-to(2);
+  //height: 100%;
+
+}
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font: {
+    size: 100%;
+  }
+  overflow-x: hidden;
+  font-family: 'source_sans_proregular', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2ba6cb;
+  line-height: inherit;
+  &:hover{
+    text-decoration: none;
+  }
+}
+/* Default paragraph styles */
+
+p,
+span,
+a,
+a.min,
+h6.min,
+h6,
+select,
+select option,
+label,
+textarea,
+input, 
+table > thead,
+table > tfoot,
+table tbody,
+table > tr > td > a,
+ul.normal,
+ol.normal,
+div.rem-style{
+  font-family: inherit;
+  font-weight: normal;
+  @include adjust-font-size-to(14px);
+  @include adjust-leading-to(2, 14px);
+  text-rendering: optimizeLegibility; }
+  .div.rem-style{
+    @extend %width-custom1;
+  }
+//adjust fonts according to view port
+label{
+  overflow: hidden;
+}
+@include MQ(SXX){
+  html{
+    @include adjust-font-size-to(14px);
+  }
+}
+
+@include MQ(L){
+  html{
+    @include adjust-font-size-to(16px);
+  }
+}
+

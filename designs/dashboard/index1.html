@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin | Dashboard</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="cdn/components/bootstrap/dist/css/bootstrap.css" media="all"/>
+        <link rel="stylesheet" href="cdn/css/admin-dashboard.css" media="all"/>
+
+        <!-- Scripts -->
+        <script type="application/javascript" src="cdn/js/jquery-2.1.1.js"></script>
+        <!--<script type="application/javascript" src="cdn/js/admin.js"></script>-->
+        <script type="application/javascript" src="cdn/components/bootstrap/dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="sidebar-container">
+                <div class="logo-env">
+                    <div class="logo">
+                        <a href="#">Admin</a>
+                    </div>
+                </div>
+                <div id="main-menu">
+                    <ul class="panel-group" id="accordion">
+                        <li class="main-menu-li">
+                            <div class="menu-icon">
+                                <img src="cdn/images/dashboard.png" alt="">
+                            </div>
+                            <div class="menu-content">
+                                <a href="index.html">Dashboard</a>
+                            </div>
+                        </li>
+                        <li class="main-menu-li">
+                            <div class="menu-icon">
+                                <img src="cdn/images/community.png" alt="">
+                            </div>
+                            <div class="menu-content">
+                                <a href="community.html">Users</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="row">
+                    <div class="admin-top-wrapper">
+                        <div class="admin-top-left">
+
+                        </div>
+                        <div class="admin-top-right">
+                            <ul class="user-info pull-left list-inline">
+                                <li class="profile-info dropdown">
+                                    <a class="profile-info-dropdown dropdown-toggle" data-toggle="dropdown" data-target="#">
+                                        <img src="cdn/images/default.png" width="44" alt="admin" class="img-circle">
+                                        Super Admin
+                                    </a>
+                                    <ul class="admin-drop-menu dropdown-menu">
+                                        <li>
+                                            <a href="#">Edit Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Inbox</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="admin-logout right" href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <h2 class="admin-header">Dashboard</h2>
+                    <div class="col-sm-4">
+                        <div class="admin-stats green-tile">
+                            <img src="cdn/images/community.png">
+                            <h1>Users</h1>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="admin-stats green-tile">
+                            <img src="cdn/images/loans.png">
+                            <h1>Administrators</h1>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="admin-stats green-tile">
+                            <img src="cdn/images/collection.png">
+                            <h1>Roles</h1>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <footer>
+            <a href="#">Kava &copy 2013 - 2014</a>
+        </footer>
+    </body>
+</html>

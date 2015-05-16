@@ -1,0 +1,51 @@
+
+.panel-group{
+
+  &.admin-side{
+    @extend .width-f,.pl,.nobg,.bor0,.br0,.pg0a,.mg0a;
+
+    .panel{
+        @extend .nobg;
+
+      &.panel-default{
+        @extend .nobg,.br0,.bor0;
+
+        .panel-heading{
+          @extend .width-f,.pl,.nobg, .bor0,.pg15tb;
+
+          .panel-title{
+            @extend .width-f,.pl;
+
+            a{
+              @extend .width-f,.pl,.posr;
+              @include transition(all,.5s);
+
+              &.collapsed{
+
+                &:before {
+                  @extend .fa-caret-right:before;
+                }
+              }
+              &:before {
+                position: absolute;
+                @extend .width-f,.pl;
+                @extend [ class ^= "fa-" ];
+                @extend .fa-caret-down:before;
+                top: 2px;
+                left: 90%;
+              }
+            }
+          }
+        }
+        .panel-collapse{
+          @extend .width-f,.pl,.nobg, .bor0;
+
+          .panel-body{
+            @extend .br0,.bor0,.pg0a;
+            background: lighten(#2D353C, 10%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+<!--#include virtual="header.shtml" -->
+<!--#include virtual="topheader.shtml" -->
+<div class="custom-scroll-body custom-scrollbar">
+	<div class="row width-f pl custom-body posr">
+		<div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center-content pg20lr">
+			<div class="row width-f pl pg20tb">
+				<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns">
+					<h2 class=" textc custom-header2">
+						<span class=" pg10lr">Specialized Features to meet your Demands</span>
+					</h2>
+					<div class="width-f pl pg30tb posr feature-items">
+						<div class="div-vertical">
+							<div class="pl textc pg10t width200">
+								<i class="fa fa-envelope fa-30x"></i>
+								<h3 class="custom-header4 width-f pl">Bulk SMSes</h3>
+							</div>
+							<div class="width_auto ovh pg20l">
+								<p>
+									Lorem ipsum dolor sit amet, nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando,
+									in soleat quaestio convenire mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc. Lorem ipsum dolor sit amet,
+									nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando, in soleat quaestio convenire
+									mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc.
+								</p>
+								<div class="feature-more-details">
+									<a class="btn btn-danger" href="#">
+										<i class="fa fa-reorder mg5r"></i>
+										Enjoy The Benefits
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row width-f pl custom-body posr">
+		<div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center-content pg20lr">
+			<div class="row width-f pl pg20tb">
+				<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns">
+					<div class="width-f pl pg30tb posr feature-items">
+							<div class="div-vertical">
+								<div class="pl textc pg10t width200">
+									<i class="fa fa-phone-square fa-30x"></i>
+									<h3 class="custom-header4 width-f pl">USSD</h3>
+								</div>
+								<div class="width_auto ovh pg20l">
+									<p>
+										Lorem ipsum dolor sit amet, nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando,
+										in soleat quaestio convenire mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc. Lorem ipsum dolor sit amet,
+										nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando, in soleat quaestio convenire
+										mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc.
+									</p>
+									<div class="feature-more-details">
+										<a class="btn btn-danger" href="#">
+											<i class="fa fa-reorder mg5r"></i>
+											Enjoy The Benefits
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row width-f pl custom-body posr">
+		<div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center-content pg20lr">
+			<div class="row width-f pl pg20tb">
+				<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns">
+					<div class="width-f pl pg30tb posr feature-items">
+							<div class="div-vertical">
+								<div class="pl textc pg10t width200">
+									<i class="fa fa-code fa-30x"></i>
+									<h3 class="custom-header4 width-f pl">Powerful API's</h3>
+								</div>
+								<div class="width_auto ovh pg20l">
+									<p>
+										Lorem ipsum dolor sit amet, nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando,
+										in soleat quaestio convenire mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc. Lorem ipsum dolor sit amet,
+										nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando, in soleat quaestio convenire
+										mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc.
+									</p>
+									<div class="feature-more-details">
+										<a class="btn btn-danger" href="#">
+											<i class="fa fa-reorder mg5r"></i>
+											Enjoy The Benefits
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row width-f pl custom-body posr">
+		<div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center-content pg20lr">
+			<div class="row width-f pl pg20tb">
+				<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns">
+					<div class="width-f pl pg30tb posr feature-items">
+							<div class="div-vertical">
+								<div class="pl textc pg10t width200">
+									<i class="fa fa-money fa-30x"></i>
+									<h3 class="custom-header4 width-f pl">Easy Paying</h3>
+								</div>
+								<div class="width_auto ovh pg20l">
+									<p>
+										Lorem ipsum dolor sit amet, nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando,
+										in soleat quaestio convenire mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc. Lorem ipsum dolor sit amet,
+										nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando, in soleat quaestio convenire
+										mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc.
+									</p>
+									<div class="feature-more-details">
+										<a class="btn btn-danger" href="#">
+											<i class="fa fa-reorder mg5r"></i>
+											Enjoy The Benefits
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row width-f pl custom-body posr">
+		<div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center-content pg20lr">
+			<div class="row width-f pl pg20tb">
+				<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns">
+					<div class="width-f pl pg30tb posr feature-items">
+							<div class="div-vertical">
+								<div class="pl textc pg10t width200">
+									<i class="fa fa-cloud fa-30x"></i>
+									<h3 class="custom-header4 width-f pl">Cloud Solutions</h3>
+								</div>
+								<div class="width_auto ovh pg20l">
+									<p>
+										Lorem ipsum dolor sit amet, nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando,
+										in soleat quaestio convenire mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc. Lorem ipsum dolor sit amet,
+										nonumy fuisset eam ne, dolor electram voluptatum ex has. In per viris nostro. Usu te ludus luptatum aliquando, in soleat quaestio convenire
+										mea. Civibus tractatos explicari sea cu. Vim at esse liberavisse, ea sit adhuc.
+									</p>
+									<div class="feature-more-details">
+										<a class="btn btn-danger" href="#">
+											<i class="fa fa-reorder mg5r"></i>
+											Enjoy The Benefits
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--#include virtual="footer.shtml" -->
+</div>

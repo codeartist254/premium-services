@@ -1,0 +1,383 @@
+/* this is where the defaults styles land */
+html{
+  height: 100%;
+
+  body{
+    height: inherit;
+    overflow: hidden;
+  }
+}
+.custom-scroll-body{
+  @extend %width-custom1, .pl;
+  height: calc(100% - 80px );
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.topheader{
+  @extend %width-custom1,.mg80b;
+
+  .topheader-main{
+    @extend %width-custom1, .z-depth-2, .zi100;
+    position: fixed;
+    top:0;
+    left: 0;
+    //background: $main1;
+    background: #fff;
+    border-top: 3px solid darken(#ccc, 10%);
+    border-bottom: 3px solid darken(#ccc, 10%);
+  }
+  .logo-heading{
+    @extend .mg0tb,.pg3tb, .crff, .custom-header4, .bold;
+  }
+  .topheader-ul{
+    @extend %width-custom1;
+    margin: 10px 0;
+    padding: 0;
+
+
+    li{
+      list-style: none;
+      float: left;
+      @extend .mg0a, .pg0a;
+      a{
+        padding: 15px 20px;
+        margin: 0 10px;
+        @extend .custom-header5, .cr37, .pl,;
+        //border:1px solid lighten($main1, 40%);
+        @include transition(all, 1s);
+        border-radius: 4px;
+
+        &.active{
+          background: darken(#ccc, 10%);
+          &:hover{
+            //border-color: inherit;
+            background: darken(#ccc, 10%);
+          }
+        }
+        &:hover{
+          //border-color: darken($main1, 5%);
+          background: darken(#ccc, 15%);
+        }
+      }
+
+    }
+  }
+
+}
+
+
+// main body css
+@include MQ(SX){
+    .home-height{
+      height:$SX/2.05;
+    }
+}
+@include MQ(S){
+  .home-height{
+    height:$S/2.05;
+  }
+}
+@include MQ(M){
+  .home-height{
+    height:$M/2.05;
+  }
+}
+@include MQ(L){
+  .home-height{
+    height:$L/2.05;
+  }
+}
+@include MQ(XL){
+  .home-height{
+    height:($XL/2.05)- 150;
+  }
+}
+
+.custom-body{
+  @extend %width-custom1;
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+
+  &:first-child{
+    border-top: none;
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+  &:nth-child(2n + 1){
+    background: #ddd;
+  }
+  &:nth-child(2n + 2){
+    background: #fff;
+  }
+}
+
+#premium-services{
+
+  .carousel-indicators{
+    bottom: -10px;
+    @include transition(all, 1s);
+
+    li{
+      width:30px;
+      height: 15px;
+      margin: 0 5px;
+      @include transition(all, 1s);
+
+      &.active{
+        width: 30px;
+        height: 15px;
+        background: darken($main1 , 0%);
+        border-color: lighten($main1, 10%);
+        @extend .z-depth-2;
+      }
+    }
+
+  }
+}
+.logo-size{
+  max-width: 135px;
+  width:100%;
+}
+.access-button{
+  @extend %width-custom1;
+  padding: 0;
+  margin: 10px 0;
+  button,
+  a,
+  .access-button-a{
+    padding: 12px 20px;
+    background: none;
+    border: 1px solid lighten($main1 , 0%);
+    color: $main1;
+    border-radius: 5px;
+    margin: 3px 0 0 10px;
+    box-shadow: none;
+    @include transition(all , 1s);
+
+    i{
+      @include transition(all , 1s);
+    }
+    &:hover{
+      background: darken($main1, 0%);
+      color: darken(#fff, 0%);
+      border-color: darken($main1, 0%);
+
+      i{
+        @extend .fa-rotate-360;
+      }
+    }
+
+  }
+}
+.customer-review{
+  @extend %width-custom1;
+  background:lighten($main5, 20%) ;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  i.fa-quote-left{
+    margin-right: 10px;
+  }
+  i.fa-quote-right{
+    margin-left: 10px;
+  }
+  p{
+
+  }
+}
+
+.contact-us{
+  @extend %width-custom1;
+
+  input{
+    width:100%;
+    padding: 10px;
+    border:5px solid $main1;
+    background:#fff;
+    border-radius: 5px;
+    @include transition(all 1s);
+
+    &:focus{
+      border-color: darken($main4, 0%);
+    }
+    &:focus + button{
+      background: darken($main4, 0%);
+    }
+
+  }
+
+  button{
+    background: $main1;
+    padding: 16px 25px !important;
+    border:none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    top:0;
+    right: 0;
+    @extend .posa;
+    @include transition(all 1s);
+
+    &:hover{
+      background: darken($main4, 0%);
+    }
+    &:hover + input{
+      border-color: #449D44;
+    }
+  }
+}
+
+.social-media{
+  float: left;
+  @extend .pg15a,;
+  @include transition(all, .5s);
+  border-radius: 3px;
+
+  i{
+    @extend .fa-30x;
+    @include transition(all, .5s);
+  }
+
+  &:hover{
+    i{
+      @extend .fa-flip-horizontal;
+      color: #fff;
+    }
+  }
+
+  &.fb{
+
+    &:hover{
+      background: $social-facebook;
+    }
+  }
+  &.tw{
+
+    &:hover{
+      background: $social-twitter;
+    }
+  }
+  &.gm{
+
+    &:hover{
+      background: $social-googleplus;
+    }
+  }
+  &.ln{
+
+    &:hover{
+      background: $social-linkedin;
+    }
+  }
+}
+
+
+.dropdown-menu{
+  @include transition(all, 0.5);
+
+  &.open{
+    display: block;
+
+    & + .access-button-a{
+      background: $succes !important;
+    }
+  }
+
+  &.login{
+      left:auto;
+      right:0;
+      width:250px;
+    padding: 10px;
+  }
+}
+
+.custom-transform-header{
+
+  position: relative;
+  &:before {
+    @extend %before-content;
+    content: 'Login Here';
+    z-index: 100;
+    color: #373737 !important;
+  }
+  &:after{
+    @extend %before-content;
+    height: 20px;
+    bottom: 0px;
+    top: auto;
+    left: 0;
+    background: #EEE;
+  }
+}
+
+.landing-input{
+
+  @extend %width-custom1;
+
+  .input-left{
+    width:60px;
+    text-align: center;
+    float: left;
+    height: 50px;
+    background: darken(#ddd, 15%);
+    border-right: 1px solid #999;
+    @extend .cr-cr4;
+  }
+  .input-right{
+   width:auto;
+    overflow: hidden;
+    background: lighten(#ddd, 5%);
+    height: 50px;
+
+    input{
+      background: none;
+      @extend .custom-header5;
+      padding: 13px 20px;
+
+      &:focus{
+        background: #fff;
+      }
+    }
+  }
+}
+.submit-button{
+
+  .login{
+    width:100%;
+    padding: 10px;
+    @extend .custom-header5;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border-width: 3px;
+    border-color: darken(#5CB85C, 15%);
+  }
+}
+
+.customer-preview{
+  height: 150px;
+
+  .customer-preview-div {
+    @extend %width-custom1, .hgti, .ovh;
+    @include transition(all, 1s);
+
+    .customer-logo {
+      max-width: 150px;
+    }
+
+    &:hover{
+       background: #ccc;
+       @include transition(all, 1s);
+     }
+  }
+
+}
+.feature-items{
+  //height: 45vh;
+}
+.feature-more-details{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  @extend %width-custom1, .textr;
+}

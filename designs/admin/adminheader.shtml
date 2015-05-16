@@ -1,0 +1,55 @@
+<div class=" adminheader">
+    <div class="adminheader-content row">
+        <div class="xlarge-2 mlarge-2 large-3 medium-6 small-6 columns">
+            <!--<h2 class=" logo-heading">-->
+            <!--Premium Sms-->
+            <!--</h2>-->
+            <a href="index.shtml">
+                <img class="logo-size" src="../images/logo5.svg" alt=""/>
+            </a>
+        </div>
+        <div class="xlarge-8 mlarge-8 large-6 columns">
+
+            &nbsp;
+        </div>
+        <div class="xlarge-2 mlarge-2 large-3 medium-6 small-6 columns pg10lr textr dropdown">
+			<a class="pr crff mg10t crp" data-target="#admin-model" data-toggle="dropdown">
+				<div class="pl width50x hgt50 ovh br50p">
+					<img class="width-f" src="../../cdn/images/user_image1.png" alt=""/>
+				</div>
+				<div class="width_auto ovh">
+					<div class="width-f pl" >
+						tirasmuturi@gmail.com
+						<i class="fa fa-caret-down mg5l"></i>
+					</div>
+					<div class="width-f pl pg20r">
+						<span>
+							Administrator
+						</span>
+					</div>
+				</div>
+			</a>
+			<ul id="admin-model" class="width-f pl dropdown-menu zi100 br2 pg0a" role="menu">
+				<li class="width-f pl mg0a pg0a">
+					<a class="width-f pl pg10tb" href="#">
+						<i class="fa fa-wrench mg5r"></i>
+						Change Password
+					</a>
+				</li>
+				<li class="width-f pl mg0a pg0a">
+					<a class="width-f pl pg10tb" href="#">
+						<i class="fa fa-gears mg5r"></i>
+						Settings
+					</a>
+				</li>
+				<li class="width-f pl mg0a pg0a">
+					<a class="width-f pl pg10tb" href="#">
+						<i class="fa fa-power-off mg5r"></i>
+						Logout
+					</a>
+				</li>
+			</ul>
+
+        </div>
+    </div>
+</div>

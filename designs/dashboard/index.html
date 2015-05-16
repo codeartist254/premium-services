@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | Dashboard</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<!--Stylesheets-->
+<link rel="stylesheet" href="cdn/components/bootstrap/dist/css/bootstrap.css" media="all"/>
+<link rel="stylesheet" href="cdn/components/datatables/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="../../cdn/components/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="cdn/css/reset.css" media="all"/>
+<link rel="stylesheet" href="cdn/css/style.css" media="all"/>
+
+<!-- Scripts -->
+<script type="application/javascript" src="cdn/js/jquery-2.1.1.js"></script>
+<!--<script type="application/javascript" src="cdn/js/admin.js"></script>-->
+<script type="application/javascript" src="cdn/components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="application/javascript" src="cdn/components/datatables/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<div class="layout-wrapper">
+  <div class="header-wrapper">
+    <div class="logo"> <a href="#"><img src="cdn/images/logo.png" alt=""></a></div>
+    <div class="logged-in-user">
+      <div class="logged-in-user-name"> <a href="#">Evans Wanyama</a> </div>
+      <div class="logged-in-user-pic"> <a href="#"><img src="cdn/images/default.png" alt=""></a> </div>
+    </div>
+  </div>
+  <div class="page-container">
+    <div class="right-wrapper">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">User Management</a></li>
+        <li><a href="#">Aggregator</a></li>
+        <li><a href="#">MSP</a></li>
+        <li><a href="#">Checkoff partner</a></li>
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div class="left-content">
+        <div class="top-content">
+          <div class="top-left-content-left">
+            <h2>User Management</h2>
+          </div>
+          <div class="top-left-content-right ">
+            <div class="btn-group">
+              <input type="button" class="btn btn-info" value="New">
+              <input type="button" class="btn btn-info" value="Edit">
+              <input type="button" class="btn btn-info" value="Disable/Enable">
+            </div>
+          </div>
+        </div>
+        <div class="content-body">
+        
+          <table id="users" class="display" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Full Names</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Mukhwasi Omukofu</td>
+                <td>Super admin</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>Timberland Opiyo</td>
+                <td>Administrator</td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="top-content" style="padding:27px;"> </div>
+        <div class="content-body">
+         <div class="details-wrapper">
+          <div class="top-body">
+            <div class="top-body-left"> User One </div>
+            <div class="top-body-right"> Created On: 5/5/2015 10:56am </div>
+          </div>
+          <div class="member-details">
+            <div class="member-details-left"> <img src="cdn/images/default.png" alt=""> </div>
+            <div class="member-details-right">
+              <p> <i class="fa fa-phone"></i> &nbsp;&nbsp;+27547667656778787878</p>
+              <p> <i class="fa fa-envelope"></i> &nbsp;&nbsp;okwawanyamma@yahoo.com</p>
+              <p> <i class="fa fa-fax"></i> &nbsp;&nbsp;7678787778</p>
+              <p> <i class="fa fa-link"></i> &nbsp;&nbsp;www.facebook.com</p>
+            </div>
+          </div>
+          <div class="member-details">
+            <h1>Personal Details</h1>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>Deatils 1:</td>
+                <td>&nbsp;</td>
+                <td>Details 2:</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Deatils 1:</td>
+                <td>&nbsp;</td>
+                <td>Details 2:</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Deatils 1:</td>
+                <td>&nbsp;</td>
+                <td>Details 2:</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+          <div class="member-details">
+            <h1>Contact Details</h1>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>Deatils 1:</td>
+                <td>&nbsp;</td>
+                <td>Details 2:</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Deatils 1:</td>
+                <td>&nbsp;</td>
+                <td>Details 2:</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Deatils 1:</td>
+                <td>&nbsp;</td>
+                <td>Details 2:</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+          <div class="member-details">
+            <h1>Employment Details</h1>
+            <div class="no-details">
+               <p>No details in this category</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="application/javascript">
+            $(document).ready(function(){
+                $('#users').dataTable({
+                    "paging": true,
+                    "ordering": true,
+                    "info": true
+                });
+            });
+        </script>
+</body>
+</html>

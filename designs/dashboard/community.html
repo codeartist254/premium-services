@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Kava | users</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!--Stylesheets-->		
+	    <link rel="stylesheet" href="cdn/components/bootstrap/dist/css/bootstrap.css" media="all" />
+        <link rel="stylesheet" href="cdn/components/datatables/css/dataTables.bootstrap.css"/>
+        <link rel="stylesheet" href="cdn/components/datatables/css/jquery.dataTables.min.css" />
+        <link rel="stylesheet" href="cdn/css/admin-dashboard.css" media="all" />
+
+	    <!-- Scripts -->
+        <script type="application/javascript" src="cdn/components/jquery-1.11.0.min/index.js"></script>
+        <script type="application/javascript" src="cdn/components/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="application/javascript" src="cdn/components/datatables/js/jquery.dataTables.min.js"></script>
+	    <script type="text/css" src="cdn/js/admin.js"></script>
+	</head>
+	<body>
+        <div class="page-container">
+        <div class="sidebar-container">
+            <div class="logo-env">
+                <div class="logo">
+                    <a href="#">Admin</a>
+                </div>
+            </div>
+            <div id="main-menu">
+                <ul class="panel-group" id="accordion">
+                    <li class="root-level">
+                        <div class="menu-icon">
+                            <img src="cdn/images/dashboard.png" alt="">
+                        </div>
+                        <div class="menu-content">
+                            <a href="index.html">Dashboard</a>
+                        </div>
+                    </li>
+                    <li class="root-level">
+                        <div class="menu-icon">
+                            <img src="cdn/images/community.png" alt="">
+                        </div>
+                        <div class="menu-content">
+                            <a href="community.html">Users</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="main-content">
+                <div class="row">
+                    <div class="admin-top-wrapper">
+                        <div class="admin-top-left">
+                            <ul class="admin-more-info">
+                                <li><a href="#" class="admin-ctrl-btn btn btn-info">Add</a></li>
+                                <li><a href="#" class="admin-ctrl-btn btn btn-info">Edit</a></li>
+                            </ul>
+                        </div>
+                        <div class="admin-top-right">
+                            <ul class="user-info pull-left list-inline">
+                                <li class="profile-info dropdown">
+                                    <a class="profile-info-dropdown dropdown-toggle" data-toggle="dropdown" data-target="#">
+                                        <img src="cdn/images/default.png" width="44" alt="admin" class="img-circle">
+                                        Super Admin
+                                    </a>
+                                    <ul class="admin-drop-menu dropdown-menu">
+                                        <li>
+                                            <a href="#">Edit Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Inbox</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="admin-logout right" href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="church-list row">
+                    <h2 class="comm-header">Kava Community</h2>
+                    <table  id="church-list" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Since</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Mukhwasi Omukofu</td>
+                                <td>Mukhwa</td>
+                                <td>mukhwa@gmail.com</td>
+                                <td>User</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Timberland Opiyo</td>
+                                <td>timber</td>
+                                <td>timber@gmail.com</td>
+                                <td>Admin</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Leny Mapesa</td>
+                                <td>madollar</td>
+                                <td>mapesa@gmail.com</td>
+                                <td>Staff</td>
+                                <td><input type="checkbox" /></td>
+                                <td>01 - 01 - 2015</td>
+                            </tr>
+                            </tbody>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Since</th>
+                            </tr>
+                        </tfoot>
+                     </table>
+                </div>
+            </div>
+            <footer>
+                <a href="#">Kava &copy 2013 - 2014</a>
+            </footer>
+        </div>
+        <script type="application/javascript">
+            $(document).ready(function(){
+                $('#church-list').dataTable({
+                    "paging": true,
+                    "ordering": true,
+                    "info": true
+                });
+            });
+        </script>
+	</body>
+</html>

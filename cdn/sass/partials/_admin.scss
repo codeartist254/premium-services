@@ -1,0 +1,170 @@
+
+// admin part
+
+$admin-header-top : 65px;
+$admin-left-width : 250px;
+.adminheader{
+  @extend %width-custom1;
+  margin-bottom: $admin-header-top;
+
+  .logo-size{
+    max-width: 120px;
+  }
+  .adminheader-content{
+    @extend %width-custom1, .posf, .top0, .left0,;
+    background: #fff;
+    border-top: 3px solid darken($main1, 20%);
+    //border-bottom: 1px solid darken($main1, 30%);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.4);
+    z-index: 100;
+
+  }
+}
+.admin-content-wrapper{
+
+  @extend %width-custom1, .hgti;
+
+  .admin-content-left{
+    width: $admin-left-width;
+    @extend .posf, .left0;
+    top: $admin-header-top + 5;
+    height: calc(100% - 65px);
+    overflow: hidden;
+    background: lighten(#2D353C, 0%);
+    z-index: 100;
+    .profile{
+      @extend %width-custom1;
+      height: 100px;
+      overflow: hidden;
+      background: darken(#1A2229, 0%);
+      float: left;
+    }
+    .rest{
+      width:100%;
+      height: calc(100% - 100px);
+      float: left;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+  .admin-content-right{
+    float: right;
+    margin-top: $admin-header-top + 2;
+    width:calc( 100% - 250px);
+    //padding: 20px;
+    height: calc(100% - 65px);
+    background: #D9E0E7;
+    //overflow-x: hidden;
+    //overflow-y: auto;
+  }
+}
+.admin-navigation{
+  @extend .width-f,.pl,.no-bullet,.mg0a,.pg0a,.bor0;
+
+  li{
+    @extend .width-f,.pl;
+
+    &.active{
+      background: #00ACAC !important;
+    }
+    a{
+      @extend .crff,.width-f,.pl,.textl,.pg15tb,.pg20lr,.br0,.bor0;
+      background: none !important;
+
+    }
+  }
+}
+.admin-content-header{
+  @extend %width-custom1, .pl, .posr;
+  //margin: 0 0 50px 0;
+  margin: 0;
+  .admin-content-header-wrapper{
+    @extend %width-custom1, .pl,.z-depth-1;
+    position: fixed;
+    top:$admin-header-top;
+    background: #eee;
+    //color: #fff;images/dash-1.png
+    left: $admin-left-width;
+    width:calc(100% - 250px);
+    z-index: 80;
+
+    h2{
+      @extend .custom-header3;
+      padding:10px 25px;
+      margin:0;
+    }
+  }
+}
+.body-content{
+  @extend %width-custom1,.pl;
+  //background: $main4;
+  //padding: 20px 30px;
+  height: calc(100% - 50px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.admin-dash{
+  @extend %width-custom1,.pl;
+  background: #ddd;
+  border:1px solid darken(#ddd, 5%);
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+.dashboard{
+  @extend %width-custom1;
+  border-radius: 3px;
+  //background: #ddd;
+  //border:4px solid darken(#ddd, 10%);
+  //padding: 15px;
+  overflow: hidden;
+  height: auto;
+
+
+  .dashboard-icon{
+    @extend .pl,.width-f;
+    //height: 130px !important;
+    //background: $main2;
+    //color: #fff;
+
+    i{
+
+    }
+    &:before{
+      position: absolute;
+      @extend [ class ^= "fa-" ];
+      top: 40px;
+      right: 40px;
+      color: rgba(#fff, 0.5);
+    }
+    &.users{
+      &:before{
+        @extend .fa-user:before,.fa-30x;
+      }
+    }
+    &.partners{
+      &:before{
+        @extend .fa-user-secret:before,.fa-30x;
+      }
+    }
+    &.roles{
+      &:before{
+        @extend .fa-briefcase:before,.fa-30x;
+      }
+    }
+
+  }
+  .dash-separator{
+    @extend .width-f,.pl;
+    height: 3px;
+    background: rgba(#000,0.3);
+    margin: 0 0 15px 0;
+    position: relative;
+
+    &:before{
+      @extend %before-content,.pl,.hgti;
+      width:60%;
+      background: rgba(#fff, 0.9);
+    }
+  }
+}

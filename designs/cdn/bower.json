@@ -1,0 +1,15 @@
+{
+  "name": "cdn",
+  "version": "0.0.0",
+  "authors": [
+    "tyras <tiras.muturi@gigavia.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

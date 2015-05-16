@@ -1,0 +1,1 @@
+<a id="final-destination" href="/">Go to homepage</a>

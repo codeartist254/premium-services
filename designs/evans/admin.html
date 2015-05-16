@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<link href="css/rset.css" type="text/css"  rel="stylesheet" media="all" />
+<link href="bootstrap/dist/css/bootstrap.min.css" type="text/css"  rel="stylesheet" media="all" />
+<link href="css/font-awesome.min.css" type="text/css"  rel="stylesheet" media="all" />
+<link href="datatables/css/jquery.dataTables.min.css" type="text/css"  rel="stylesheet" media="all" /> 
+<link href="css/admin.css" type="text/css"  rel="stylesheet" media="all" />
+
+<script type="application/javascript" src="datatables/js/jquery.js"></script>
+<script type="application/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="datatables/js/jquery.dataTables.min.js"></script>
+<script type="application/javascript">
+$(document).ready(function() {
+    //data table Lists
+    $('#members-list').dataTable({
+        "paging": false,
+        "info": false,
+        "bSort": false,
+        "oLanguage": { "sSearch": "" } 
+    });
+	
+	 $('.dataTables_filter input').attr("placeholder", "Search");
+})
+</script>
+</head>
+
+<body>
+<div class="top-header-wrapper">
+    <div class="top-header-left">
+      <a href="#">Mtrack SMS</a>
+    </div>
+    <div class="top-header-right">
+    
+    <div class="dropdown pr">
+                <a id="menu-more" href="#" class="pg10lr"  data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                    Logged Inuser <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li><a href="/settings" class="pg10tb pg8lr"><i class="fa fa-wrench mg5r"></i> Settings</a></li>
+                    <li><a href="/logout" class="pg10tb pg8lr"><i class="fa fa-power-off mg5r"></i> Logout</a></li>
+                </ul>
+            </div>
+            
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="content-left">
+       <div class="company-info">
+          <h3>Company Account</h3>
+          <p>0 sms</p>
+          <a href="#" class="btn btn-sm btn-success">Buy SMS</a>
+       </div>
+       <h1>Administration</h1>
+       <ul>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+       </ul>
+      
+       <h1>SMS</h1>
+       <ul>
+            <li><a href="#">Compose</a></li>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Sent SMS</a></li>
+            <li><a href="#">Scheduled</a></li>
+       </ul>
+       
+       <h1>Contacts</h1>
+       <ul>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Contact List</a></li>
+       </ul>
+        <h1>Others</h1>
+       <ul>
+            <li><a href="#">USSD App Request</a></li>
+            <li><a href="#">Shortcode Request</a></li>
+            <li><a href="#">Two-way SMS app</a></li>
+       </ul>
+    </div>
+    <div class="content-right">
+      <div class="content-inner-wrapper">
+        <div class="content-header">
+        <div class="top-content">
+         <div class="top-left-content-left">
+                        <h2>Partners [10]</h2>
+                    </div>
+                    <div class="top-left-content-right ">
+                        <div class="btn-group">
+                        	
+                             <a href="/members/add_new" class="btn btn-info btn-sm mg1lr"><i class="fa fa-plus-circle"></i> Add new Partner</a>
+                            <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#add-kava-policy"><i class="fa fa-minus-circle"></i> Delete Partner</a>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="content-one">
+             <table  id="members-list" class="display" cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Type of Organisation</th>
+                            <th>Contact Phone no.</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr id="1">
+                                <td><input name="pk" type="checkbox" value="1"/></td>
+                                <td><a href="#">Nairobi Java House</a></td>
+                                <td><a href="#">Business</a></td>
+                                <td><a href="#">09898777878</a></td>
+                            </tr>
+                             <tr id="1">
+                                <td><input name="pk" type="checkbox" value="1"/></td>
+                                <td><a href="#">St Emmanual</a></td>
+                                <td><a href="#">Church</a></td>
+                                <td><a href="#">09898777878</a></td>
+                            </tr>
+                             <tr id="1">
+                                <td><input name="pk" type="checkbox" value="1"/></td>
+                                <td><a href="#">Kmi Boys</a></td>
+                                <td><a href="#">School</a></td>
+                                <td><a href="#">09898777878</a></td>
+                            </tr>
+                       
+                        </tbody>
+                        
+                    </table>
+        </div>
+        <div class="content-two">
+            <div class="content-two-header">
+                <div class="header-left">
+                   Nairobi Java House
+                </div>
+                <div class="header-right">
+                   <a href="#" class="btn btn-default">Edit</a>
+                </div>
+            </div>
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th colspan="4">Basic Details</th>
+              </tr>
+              <tr>
+                <td><span>Name</span></td>
+                <td>Nairobi Java House</td>
+                <td><span>Type</span></td>
+                <td>Business</td>
+              </tr>
+              <tr>
+                <td><span>Contact Email</span></td>
+                <td>okk@gmail.com</td>
+                <td><span>Contact Phone</span></td>
+                <td>0725988474</td>
+              </tr>
+            </table>
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th colspan="4">SMS Stats</th>
+              </tr>
+              <tr>
+                <td><span>Purchases</span></td>
+                <td>345</td>
+                <td><span>Send</span></td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td><span>Current Purchase Request</span></td>
+                <td>10000</td>
+                <td><span>Paid</span></td>
+                <td>Yes</td>
+              </tr>
+            </table>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th colspan="4">Other Services</th>
+              </tr>
+              <tr>
+                <td><span>USSD</span></td>
+                <td>Yes</td>
+                <td><span>USSD Code</span></td>
+                <td>345656</td>
+              </tr>
+              <tr>
+                <td><span>Shortcode</span></td>
+                <td>YES</td>
+                <td><span>Shortcode Number</span></td>
+                <td>77878</td>
+              </tr>
+            </table>
+
+             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th colspan="4">Payments</th>
+              </tr>
+              <tr>
+                <td><span>Sms</span></td>
+                <td>Paid</td>
+                <td><span>USSD Code</span></td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td><span>Shortcode</span></td>
+                <td colspan="2">Paid</td>
+              </tr>
+            </table>
+            
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

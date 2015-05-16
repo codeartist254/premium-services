@@ -1,0 +1,348 @@
+*, *:after, *:before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+    color: #aaabae;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover, a:hover{
+	color: #2A6496;
+	text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+/* ---------------------------
+Admin page framework: Sidebar
+------------------------------*/
+.page-container{
+    bottom: 0;
+    left:0;
+    padding-left:280px;
+    right: 0;
+    top:0;
+    width: 100%;
+}
+.sidebar-container{
+    background: none repeat scroll 0 0 #303641;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #aaabae;
+    left:0;
+    position: absolute;
+    top:0;
+    width: 280px;
+    height: 2412px;
+    z-index: 1;
+}
+.logo-env{
+    box-sizing: border-box;
+    padding: 35px;
+    width: 100%;
+}
+.logo{
+    display: block;
+    float: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.logo a{
+    color: #aaabae;
+    display: inline-block;
+    /*background: url("../images/logo.PNG") no-repeat scroll 8px 16px rgba(0, 0, 0, 0);*/
+    font-size: 40px;
+    font-weight: bold;
+    /*padding-left: 38px;*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.logo a:hover, a:focus{
+    color: #2a6496;
+}
+#main-menu{
+    clear:left;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+#main-menu ul{
+    list-style: none outside none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+#main-menu li{
+    border-bottom: 1px solid rgba(69, 74, 84, 0.7);
+    font-size: 12px;
+    height: 35px;
+    margin: 0;
+    overflow: hidden;
+    padding: 6px 0 0 44px;
+    position: relative;
+}
+#main-menu li:first-child{
+    border-top: 1px solid rgba(69, 74, 84, 0.7);
+    margin-top: 20px;
+}
+.root-level{
+    
+}
+.menu-icon{
+    position: absolute;
+}
+.menu-icon img{
+    margin-top: 5px;
+}
+.menu-content{
+    font-size: 16px;
+    margin-left: 19px;
+}
+.menu-content a{
+    color: #aaabae;
+}
+.menu-content a:hover, a:focus{
+    color: #fff;
+    text-decoration: underline;
+}
+/* Admin page framework:Main Content */
+.main-content{
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 20px 20px;
+    position:relative;
+    width: 100%;
+    z-index: 2;
+    margin-top: -65px;
+}
+.admin-more-info{
+    margin: 16px auto 0;
+    padding: 12px 0 0;
+}
+.admin-more-info li{
+    list-style: none outside none;
+    display: inline;
+}
+.admin-row{
+    margin-top: 30px;
+}
+.admin-row-col{
+    border: 1px solid;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+.admin-top-wrapper{
+    width: 100%;
+    height: auto;
+}
+.admin-top-left{
+    float: left;
+    width: 68%;
+    margin:0;
+    padding-left: 15px;
+}
+.admin-top-right{
+    float: right;
+    width: 32%;
+}
+.user-info{
+    list-style: none outside none;
+    margin: 0 0 0 234px;
+    padding: 0;
+}
+.user-info-wrapper{
+    /*margin-left: 240px;*/
+    padding-left: 134px;
+}
+.user-info > li.profile-info{
+    margin-right: 10px;
+}
+.user-info > li{
+    margin-right: 2px;
+}
+.admin-drop-menu{
+    margin: -14px 0 0 45px;
+    min-width: 100px !important;
+    background: none repeat scroll 0 0 #303641;
+}
+.admin-drop-menu li a{
+    color: #FFFFFF !important;
+}
+.admin-drop-menu li a:hover{
+    color: #000000 !important;
+}
+
+.profile-info.dropdown{
+    /*background-color: #303641;*/
+    border-color: #454a54;
+    margin-top: 15px;
+    padding: 0;
+}
+.profile-info.dropdown .dropdown-menu li{
+    color: #aaabae;
+    font-size: 12px;
+    padding: 0;
+}
+.profile-info-dropdown{
+    color: #2b303a;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out 0s;
+    font-weight: bold;
+}
+.user-info li:nth-child(2){
+    color: #9BA4B4;
+}
+.admin-ctrl-btn{
+    width: 127px !important;
+    margin-bottom: 1px !important;
+    padding: 6px 12px 6px 2px !important;
+}
+.admin-header, .comm-header{
+    color: #6f6f6f;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.2;
+    /*text-align: center;*/
+    text-decoration: underline;
+    margin:-6px 0 20px 17px;
+}
+.comm-header{
+    margin:23px 0 18px !important;
+    text-align: center;
+}
+.admin-dashboard{
+    margin-top: 15px;
+}
+/*.admin-dashboard h2{*/
+    /*margin:-10px 0 20px;*/
+/*}*/
+.admin-stats{
+    background: none repeat scroll 0 0 padding-box #303641;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    transition: all 300ms ease-in-out 0s;
+    color: #e6e7ea;
+}
+.admin-stats:hover{
+    color: #FFFFFF;
+}
+.admin-stats img{
+    float: left;
+    margin:3px 5px 0 0;
+}
+.admin-stats h1{
+    border-bottom: 1px solid #BDB7BA;
+    font-weight: bold;
+    margin: 0 0 5px;
+    padding-bottom:5px;
+    background: url("/designs/cdn/images/community.png");
+    font-size:20px;
+
+}
+.admin-stats h1:hover{
+    border-bottom: 1px solid #ffffff;
+}
+.admin-stats th{
+    font-size: 14px;
+    font-weight: 500;
+}
+.admin-stats td{
+    padding-top: 5px;
+}
+.red-tile{
+    background: none repeat scroll 0 0 #f56954;
+}
+.red-tile:hover{
+    background: none repeat scroll 0 0 #f4543c;
+}
+.green-tile{
+    background: none repeat scroll 0 0 #00a65a;
+}
+.green-tile:hover{
+    background: none repeat scroll 0 0 #008d4c;
+}
+.aqua-tile{
+    background: none repeat scroll 0 0 #00c0ef;
+}
+.aqua-tile:hover{
+    background: none repeat scroll 0 0 #00acd6;
+}
+.blue-tile{
+    background: none repeat scroll 0 0 #0073b7;
+}
+.blue-tile:hover{
+    background: none repeat scroll 0 0 #00639e;
+}
+.num{
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+.stat-info{
+    clear: both;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: -23px;
+}
+.stat-info-left{
+    float: left;
+    margin-top: 30px;
+}
+.stat-info-left h3{
+    font-size: 18px;
+    margin-top:5px;
+    color: #FFFFFF;
+    padding-left: 2px;
+}
+.stat-info-left p{
+    font-size: 11px;
+    margin-top: 5px;
+    color: #FFFFFF;
+    padding-left: 2px;
+}
+.stat-info-right{
+    float: right;
+}
+.stat-info-gen{
+    text-decoration: underline;
+}
+/*
+    Church list table
+*/
+.church-list{
+    width: 100% !important;
+    margin: -30px auto;
+}
+.church-list thead tr, .church-list tfoot tr{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.church-list td{
+    color: #303641;
+}
+.admin-col{
+    margin-left: -120px;
+}
+/*
+ Admin footer
+*/
+footer{
+    text-align: center;
+    margin: 52px auto;
+}

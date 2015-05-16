@@ -1,0 +1,66 @@
+/* CSS Document */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ul, ol, dl {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, pre, code {
+    font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6, address {
+    font-style: normal;
+    font-weight: normal;
+}
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, embed, object, param {
+    margin: 0;
+    padding: 0
+}
+a img, :link img, :visited img {
+    border: none;
+}
+embed, object, param {
+    display: block;
+}
+fieldset, input, textarea, select, option {
+    background-color: #fff;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+    outline: 0 none;
+    border: 1px solid #B6C9B1;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:focus {
+    outline: none;
+}
+/* - Clearfix (fixes floating content layout issues) */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 0;
+}
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+/* End: Miscellaneous */
+.clear {
+    clear: both;
+}

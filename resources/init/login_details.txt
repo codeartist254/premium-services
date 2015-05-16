@@ -1,0 +1,7 @@
+Instructions:
+-------------
+1. Import the bulksms.sql schema 
+2. Then use the following login details to access the admin : 
+
+email: admin@mtracksolutions.co.ke
+pwd: pass2015

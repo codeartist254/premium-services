@@ -1,0 +1,58 @@
+<!--#include virtual="header.shtml" -->
+<!--#include virtual="topheader.shtml" -->
+<div class="custom-scroll-body custom-scrollbar">
+    <div  id="services" class="width-f pl custom-body posr bg-cr2">
+        <div class="row width-f pl">
+            <div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center pg20lr">
+                <div class="row width-f pl pg20tb">
+                    <div class="xlarge-6 mlarge-6 large-6 medium-8 small-12 columns center-content">
+                        <!--<h2 class=" textc custom-header2 bg-cr2 mg0a crff bor2 borb borcbb">-->
+                            <!--<span class=" pg10lr">Login Here</span>-->
+                        <!--</h2>-->
+                        <div class="width-f pl pg20a">
+
+                            <div class="width-f pl pg10tb">
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="text" class="input br br0" placeholder="Email Address"/>
+                                    </div>
+                                </div>
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="password" class="input br br0" placeholder="******"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="width-f pl textr submit-button">
+                                <button type="button" class="btn btn-success login">Login Now</button>
+
+                                <div class="xlarge-6 mlarge-6 large-6 medium-8 small-12 columns pg0lr textl">
+                                    <a href="#" class="crcc">
+                                        <i class="fa fa-exclamation-triangle mg5r"></i>
+                                        Forgot Password ?
+                                    </a>
+                                </div>
+                                <div class="xlarge-6 mlarge-6 large-6 medium-8 small-12 columns pg0lr textr">
+                                    Not a member ?
+                                    <a href="register.shtml" class="crff mg20l">Sign Up Now ! <i class="fa fa-arrow-right mg5l"></i></a>
+                                </div>
+                                <!--<button type="button" class="btn btn-default pg10tb mg20l" data-dismiss="modal">Close</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="footer.shtml" -->
+</div>

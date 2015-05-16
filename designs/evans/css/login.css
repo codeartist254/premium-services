@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	padding:0px;
+	margin:0px;
+	background:#d9e0e7;
+}
+.top-header-wrapper{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	padding-top:2%;
+}
+
+.top-header{
+	width:1000px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	padding-bottom:0px;
+}
+
+.top-header-left{
+	width:30%;
+	height:auto;
+	overflow:hidden;
+	float:left;
+}
+
+.top-header-right{
+	width:50%;
+	height:auto;
+	overflow:hidden;
+	float:right;
+	text-align:right;
+	padding:20px 0px 0px 0px;
+}
+
+.login-wrapper{
+	width:400px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	border:1px solid #ccc;
+	background:#fff;
+	border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+	padding:35px;
+}
+.login-wrapper label{
+	width:100%;
+	height:auto;
+	font-size:1.2em;
+	margin:0px 0px 5px 0px;
+}
+.login-wrapper input[type='text'],.login-wrapper input[type='password']{
+	width:100%;
+	height:auto;
+	padding:10px;
+	border:1px solid #f1f1f1;
+	margin:0px 0px 20px 0px;
+}
+
+.login-wrapper input[type='text']:focus,.login-wrapper input[type='password']:focus{
+	border:1px solid #39F;
+}
+
+.login-wrapper input[type='submit']{
+	width:100%;
+	font-size:1.2em;
+	padding:10px 0px;
+}
+
+.login-wrapper-left{
+	width:49%;
+	height:auto;
+	overflow:hidden;
+	float:left;
+}
+
+.login-wrapper-right{
+	width:45%;
+	height:auto;
+	overflow:hidden;
+	padding:40px 20px 20px;
+	text-align:center;
+	float:right;
+	border-left:1px solid #f2f2f2;
+	margin-top:40px;
+}
+
+.login-wrapper-right p{
+	font-style:italic;
+	font-size:1.2em;
+	margin:20px 0px 20px 0px;
+	font-weight:normal;
+}
+
+.login-inner-wrapper{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin:20px 0px 0px 0px;
+}
+
+.login-inner-left{
+	width:48%;
+	height:auto;
+	overflow:hidden;
+	float:left;
+}
+
+.login-inner-right{
+	width:48%;
+	height:auto;
+	overflow:hidden;
+	float:right;
+	text-align:right;
+}
+
+.header-intro{
+	width:500px;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+	padding:10px 0px;
+	margin:0 auto;
+}
+.header-intro h1{
+	font-size:1.5em;
+}
+.header-intro h2{
+	font-size:1.2em;
+}
+

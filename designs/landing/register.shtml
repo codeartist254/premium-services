@@ -1,0 +1,155 @@
+<!--#include virtual="header.shtml" -->
+<!--#include virtual="topheader.shtml" -->
+<div class="custom-scroll-body custom-scrollbar">
+    <div  id="services" class="width-f pl custom-body posr bg-cr2">
+        <div class="row width-f pl">
+            <div class="xlarge-8 mlarge-10 large-11 medium-12 small-12 columns center pg20lr">
+                <div class="row width-f pl pg20tb">
+                    <div class="xlarge-6 mlarge-6 large-6 medium-8 small-12 columns center-content pg0a">
+                        <h2 class=" textc custom-header2 mg0a crff ">
+                            <span class=" pg10lr">Register Now </span>
+                        </h2>
+                        <div class="width-f pl pg20a">
+
+                            <div class="width-f pl pg10tb">
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="text" class="input br br0" placeholder="First Name"/>
+                                    </div>
+                                </div>
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="text" class="input br br0" placeholder="Last Name"/>
+                                    </div>
+                                </div>
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="text" class="input br br0" placeholder="Email Address"/>
+                                    </div>
+                                </div>
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="text" class="input br br0" placeholder="Phone Number"/>
+                                    </div>
+                                </div>
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="password" class="input br br0" placeholder="Password ( ****** )"/>
+                                    </div>
+                                </div>
+                                <div class="width-f pl mg10tb landing-input">
+                                    <div class="input-left">
+                                        <div class="div-vertical">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                    </div>
+                                    <div class="input-right">
+                                        <input type="password" class="input br br0" placeholder="Confirm Password ( ****** )"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="width-f pl textr submit-button">
+                                <button type="button" class="btn btn-success login">Register Now</button>
+                                <div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns pg0lr textr">
+                                    Already a member ?
+                                    <a href="login.shtml" class="crff mg20l">Login Now ! <i class="fa fa-arrow-right mg5l"></i></a>
+                                </div>
+                                <!--<button type="button" class="btn btn-default pg10tb mg20l" data-dismiss="modal">Close</button>-->
+                            </div>
+                        </div>
+                        <!--<div class="width-f pl pg20a">-->
+
+                            <!--<div class="width-f pl pg10tb mg20b">-->
+                                <!--<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns mg10tb">-->
+                                    <!--<label class="width-f pl">-->
+                                        <!--<i class="fa fa-user mg5r"></i>-->
+                                        <!--First Name-->
+                                    <!--</label>-->
+                                    <!--<div class="width-f pl">-->
+                                        <!--<input type="text" class="input" placeholder="First Name"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns mg10tb">-->
+                                    <!--<label class="width-f pl">-->
+                                        <!--<i class="fa fa-user mg5r"></i>-->
+                                        <!--Last Name-->
+                                    <!--</label>-->
+                                    <!--<div class="width-f pl">-->
+                                        <!--<input type="text" class="input" placeholder="Last Name"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns mg10tb">-->
+                                    <!--<label class="width-f pl">-->
+                                        <!--<i class="fa fa-envelope mg5r"></i>-->
+                                        <!--Email Address-->
+                                    <!--</label>-->
+                                    <!--<div class="width-f pl">-->
+                                        <!--<input type="text" class="input" placeholder="Email Address"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns mg10tb">-->
+                                    <!--<label class="width-f pl">-->
+                                        <!--<i class="fa fa-phone mg5r"></i>-->
+                                        <!--Phone Number-->
+                                    <!--</label>-->
+                                    <!--<div class="width-f pl">-->
+                                        <!--<input type="text" class="input" placeholder="Phone Number"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns mg10tb">-->
+                                    <!--<label class="width-f pl">-->
+                                        <!--<i class="fa fa-lock mg5r"></i>-->
+                                        <!--Password-->
+                                    <!--</label>-->
+                                    <!--<div class="width-f pl">-->
+                                        <!--<input type="text" class="input" placeholder="Password"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="xlarge-12 mlarge-12 large-12 medium-12 small-12 columns mg10tb">-->
+                                    <!--<label class="width-f pl">-->
+                                        <!--<i class="fa fa-lock mg5r"></i>-->
+                                        <!--Confirm Password-->
+                                    <!--</label>-->
+                                    <!--<div class="width-f pl">-->
+                                        <!--<input type="text" class="input" placeholder="Confirm Password"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="width-f pl textr">-->
+                                <!--<button type="button" class="btn btn-success pg10tb mg20l">Login Now</button>-->
+                                <!--<button type="button" class="btn btn-warning pg10tb mg20l">Forgot Password ?</button>-->
+                                <!--&lt;!&ndash;<button type="button" class="btn btn-default pg10tb mg20l" data-dismiss="modal">Close</button>&ndash;&gt;-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include virtual="footer.shtml" -->
+</div>

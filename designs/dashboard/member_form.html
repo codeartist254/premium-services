@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | Dashboard</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<!--Stylesheets-->
+<link rel="stylesheet" href="cdn/components/bootstrap/dist/css/bootstrap.css" media="all"/>
+<link rel="stylesheet" href="cdn/components/datatables/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="../../cdn/components/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="cdn/css/reset.css" media="all"/>
+<link rel="stylesheet" href="cdn/css/style.css" media="all"/>
+
+<!-- Scripts -->
+<script type="application/javascript" src="cdn/js/jquery-2.1.1.js"></script>
+<!--<script type="application/javascript" src="cdn/js/admin.js"></script>-->
+<script type="application/javascript" src="cdn/components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="application/javascript" src="cdn/components/datatables/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<div class="layout-wrapper">
+  <div class="header-wrapper">
+    <div class="logo"> <a href="#"><img src="cdn/images/logo.png" alt=""></a></div>
+    <div class="logged-in-user">
+      <div class="logged-in-user-name"> <a href="#">Evans Wanyama</a> </div>
+      <div class="logged-in-user-pic"> <a href="#"><img src="cdn/images/default.png" alt=""></a> </div>
+    </div>
+  </div>
+  <div class="page-container">
+    <div class="right-wrapper">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">User Management</a></li>
+        <li><a href="#">Aggregator</a></li>
+        <li><a href="#">MSP</a></li>
+        <li><a href="#">Checkoff partner</a></li>
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div class="form-top-wrapper"> <a href="#"><i class="fa fa-user"> </i> Add Member</a> </div>
+      <div class="form-container" role="tabpanel"> 
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">General Details</a></li>
+          <li role="presentation"><a href="#employment" aria-controls="employment" role="tab" data-toggle="tab">Employment</a></li>
+          <li role="presentation"><a href="#user" aria-controls="user" role="tab" data-toggle="tab">System User</a></li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="general">
+            <div class="wide-form-wrapper">
+              <div class="form-details-wrapper">
+                <h1 class="bg-success">Member Details</h1>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="10%">Title:</td>
+                    <td><select name="title">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                      </select></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td width="10%">First Name:</td>
+                    <td><input type="text" value=""></td>
+                    <td width="10%">Second Name:</td>
+                    <td><input type="text" value=""></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-details-wrapper">
+                <div class="form-details-half">
+                  <h1 class="bg-success">Personal Details</h1>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="form-details-half-right">
+                  <h1 class="bg-success">Contact Details</h1>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                 </table>
+                </div>
+              </div>
+              <div class="form-details-wrapper">
+                <div class="form-details-half">
+                  <h1 class="bg-success">Personal Details</h1>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="form-details-half-right">
+                  <h1 class="bg-success">Contact Details</h1>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                 </table>
+                </div>
+              </div>
+              <div class="form-details-wrapper">
+                <div class="form-details-half">
+                  <h1 class="bg-success">Personal Details</h1>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="form-details-half-right">
+                  <h1 class="bg-success">Contact Details</h1>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                      <td width="15%">First Name:</td>
+                      <td><input type="text" value=""></td>
+                    </tr>
+                 </table>
+                </div>
+              </div>
+              <div class="form-details-wrapper" style="text-align:right">
+                  <input type="button" class="btn btn-info"  value="Save Details">
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="employment">...</div>
+          <div role="tabpanel" class="tab-pane" id="user">...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
